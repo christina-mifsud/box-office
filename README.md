@@ -9,20 +9,13 @@ In the same vein, do not worry too much about how much progress you make through
 If you have any questions please do not hesitate to contact us.
 
 ## The Task
----
-
-As a Junior Developer at SOLT, you will be required to implement new features and maintain current ones across the front end of our sites.
-
-For this task, we would like you to build a simple React component that consumes our `/shows/all-open` endpoint and displays the shows on the browser.
-### React Component
-
-Recreate the component in the attached "react-component.jpg" image by fetching the shows from this [endpoint](https://officiallondontheatre.com/wp-json/shows/all-open).
+For this task we would like your to recreate the component in the attached "react-component.jpg" image by fetching the shows from this [endpoint](https://officiallondontheatre.com/wp-json/shows/all-open) and displays them on the browser.
 
 In the `/shows/all-open` endpoint you will find a `see_tickets_url_infos` property that stores an array of booking links. If the array is empty, then that show should appear as "SOLD OUT". If there are items in the array, then you should pick the url with a subdomain of `tktsonline.seetickets.com` as the booking link and if that is not available fallback to using the `officiallondontheatre.seetickets.com` url.
 
-- Shows should be displayed on a single column grid on mobile device, two columns on medium size screens and three columns for large screens
+- Shows should be displayed on a single column grid on mobile device, two columns on tablet screens and three columns for desktop screens
 - Each show tile should include the show image, title and click through to the correct booking link
-- "SOLD OUT" shows should be greyed out with a label of "SOLD OUT" in place of the "BOOK NOW" CTA. You should also **not** be able to click on these tiles.
+- "SOLD OUT" shows should be greyed out with a label of "SOLD OUT" in place of the "BOOK NOW" CTA. You should also **not** be able to click on these tiles
 - Show tiles on the same row should all be equal height
 
 
@@ -30,7 +23,6 @@ In the `/shows/all-open` endpoint you will find a `see_tickets_url_infos` proper
 
 
 ## Project Setup
----
 
 We recommend you use `create-react-app` as this will give you a lot of functionality for free, however if you have your own boilerplate then you are welcome to use that instead. Please separate the boilerplate and your own work into separate commits to make the work of the reviewers easier.
 
