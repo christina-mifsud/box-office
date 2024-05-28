@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev:client": "PORT=3000 npm --workspace client run dev",
-    "dev:server": "LOG_LEVEL=debug PORT=3100 npm --workspace server run dev"
+    "dev:server": "PORT=9090 npm --workspace server run dev"
   },
   "keywords": [],
   "workspaces": [
