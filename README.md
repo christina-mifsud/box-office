@@ -9,7 +9,7 @@ The purpose of this technical interview is to assess your problem-solving abilit
 ### Description
 
 For this task, we would like you to display a list of shows by fetching the shows from an endpoint and displaying them in the browser.
-Here's an example of what it should look like:
+Here's what the page should look like:
 
 ![React Component](./assets/react-component.jpg)
 
