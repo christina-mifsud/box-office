@@ -1,18 +1,36 @@
 import React from "react";
+import "../showings.css";
 
 function SingleMovieCard({ showingsArray }) {
   // console.log(showingsArray.map((show) => show.title));
+
   return (
     <>
-      <h1>Wicked TEST</h1>
       {showingsArray?.map((show) => {
         return (
           <>
-            <div>
+            <div
+              className={
+                show.booking_until
+                  ? "single-movie-card"
+                  : "single-movie-card overlay"
+              }
+            >
               <img src={show.image} alt={show.title} />
+              <div className="single-movie-card-copy">
+                <h3>{show.title}</h3>
+                {show.booking_until ? (
+                  <>
+                    <a href={show.url}>About the show</a>
+                    <h5 className="single-movie-card-label">
+                      <a href={show.see_tickets}>Book Now</a>
+                    </h5>
+                  </>
+                ) : (
+                  <h5>Sold Out</h5>
+                )}
+              </div>
             </div>
-            <div>{show.title}</div>
-            <h4>{show.excerpt}</h4>
           </>
         );
       })}
