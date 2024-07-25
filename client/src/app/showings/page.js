@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import SingleMovieCard from "../components/SingleMovieCard";
+import "../showings.css";
 
 export default function Showings() {
   // single card for movie which will then be mapped over
@@ -27,8 +28,12 @@ export default function Showings() {
 
   return (
     <main>
-      <h1>Showings page</h1>
-      <SingleMovieCard showingsArray={showingsArray} />
+      <div className="movie-card-container-parent">
+        <div className="movie-card-container-header">Today's Deals</div>
+        <div className="movie-card-container-child">
+          <SingleMovieCard showingsArray={showingsArray} />
+        </div>
+      </div>
     </main>
   );
 }
